@@ -19,7 +19,7 @@ const Header = () => {
             <div className="text-[22px] cursor-pointer" >FASHION</div>
             <div className="text-[22px] cursor-pointer" >FAVOURITE</div>
             <div className="text-[22px] cursor-pointer" >LIFESTYLE</div>
-            <CustomButton title={'SING UP'} handleClick={handleSignUp} />
+            <CustomButton title={'SIGN UP'} handleClick={handleSignUp} />
         </div>
     </div>
 }
