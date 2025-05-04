@@ -1,14 +1,17 @@
-import { Button } from "antd"
+import { Button } from "antd";
 
 interface IProps {
-    title: String,
-    handleClick?: () => void;
+  title: String;
+  className?: String;
+  handleClick?: () => void;
 }
 
-const CustomButton = ({ title, handleClick }: IProps) => {
-    return <Button onClick={handleClick} className="custom-btn">
-        {title}
+const CustomButton = ({ title, handleClick, className }: IProps) => {
+  return (
+    <Button onClick={handleClick} className={`custom-btn ${className}`}>
+      {title}
     </Button>
-}
+  );
+};
 
-export default CustomButton
+export default CustomButton;

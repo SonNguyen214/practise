@@ -12,13 +12,13 @@ const Header = () => {
     }
 
     return <div className="header w-full px-[100px] my-[46px] flex items-center justify-between">
-        <Image width={200} height={60} src='/img/logo.png' alt="" className="logo" />
+        <Image width={200} height={60} src='/img/logo.png' alt="" className="logo cursor-pointer" />
 
         <div className="nav flex items-center justify-between gap-16">
-            <div className="text-[22px] cursor-pointer" >CATALOGUE</div>
-            <div className="text-[22px] cursor-pointer" >FASHION</div>
-            <div className="text-[22px] cursor-pointer" >FAVOURITE</div>
-            <div className="text-[22px] cursor-pointer" >LIFESTYLE</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >CATALOGUE</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >FASHION</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >FAVOURITE</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >LIFESTYLE</div>
             <CustomButton title={'SIGN UP'} handleClick={handleSignUp} />
         </div>
     </div>
