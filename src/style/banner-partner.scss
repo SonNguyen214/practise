@@ -1,39 +1,19 @@
 .banner-partner {
-    @apply pb-5 bg-[#EBD96B];
+  @apply h-[186px] flex transition-all duration-500 bg-[#EBD96B];
 
-    .tag {
-        @apply w-[308px] text-center;
+  .tag {
+    @apply w-[308px] text-center;
 
-        .text {
-            @apply text-center;
-        }
+    .text {
+      @apply text-center;
     }
+  }
 
-    .rfm-marquee-container {
-        @apply gap-[50px] mt-12;
+  .list-image {
+    @apply flex;
 
-        @include max-md {
-            @apply gap-5 mt-7;
-        }
+    img {
+      @apply w-full h-auto object-cover max-h-[61px] mx-12;
     }
-
-    .list-image {
-        @apply flex gap-[50px];
-
-        @include max-md {
-            @apply gap-7;
-        }
-
-        .logo-partner {
-            @apply h-[100px] w-[200px] relative;
-
-            @include max-md {
-                @apply h-[70px] w-[120px];
-            }
-
-            img {
-                @apply w-full h-auto object-cover;
-            }
-        }
-    }
+  }
 }

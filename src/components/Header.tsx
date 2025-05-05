@@ -15,10 +15,10 @@ const Header = () => {
         <Image width={200} height={60} src='/img/logo.png' alt="" className="logo cursor-pointer" />
 
         <div className="nav flex items-center justify-between gap-16">
-            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >CATALOGUE</div>
-            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >FASHION</div>
-            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >FAVOURITE</div>
-            <div className="text-[22px] cursor-pointer hover:scale-[1.1] transition-all" >LIFESTYLE</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.04] transition-all" >CATALOGUE</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.04] transition-all" >FASHION</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.04] transition-all" >FAVOURITE</div>
+            <div className="text-[22px] cursor-pointer hover:scale-[1.04] transition-all" >LIFESTYLE</div>
             <CustomButton title={'SIGN UP'} handleClick={handleSignUp} />
         </div>
     </div>

@@ -14,19 +14,18 @@ const BannerPartner = () => {
   ];
 
   return (
-    <div className="banner-partner transition-all duration-500 pb-5 bg-[#EBD96B]">
+    <div className="banner-partner">
       <Marquee autoFill>
         <div className="list-image">
           {data.map((link, index) => (
-            <div className="logo-partner" key={index}>
-              <Image
-                layout="fill"
-                alt="partner"
-                src={link}
-                sizes="(max-width: 600px) 100vw, 100px"
-                objectFit="contain"
-              />
-            </div>
+            <Image
+              key={index}
+              alt="partner"
+              src={link}
+              width={176}
+              height={61}
+              objectFit="contain"
+            />
           ))}
         </div>
       </Marquee>
