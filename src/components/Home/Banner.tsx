@@ -2,7 +2,7 @@ import Image from "next/image";
 import CustomButton from "../Custom/CustomButton";
 
 interface IProps {
-  isBannerSale?: Boolean;
+  isBannerSale?: boolean;
 }
 
 const BannerHome = ({ isBannerSale }: IProps) => {
@@ -20,7 +20,7 @@ const BannerHome = ({ isBannerSale }: IProps) => {
           <div className="short-des text-[32px]">
             Live for Influential and Innovative fashion!
           </div>
-          <CustomButton title={"Shop now"} className='!w-[160px]'/>
+          <CustomButton title={"Shop now"} className="!w-[160px]" />
         </div>
       ) : (
         <Image
@@ -43,15 +43,17 @@ const BannerHome = ({ isBannerSale }: IProps) => {
         />
       ) : (
         <div className="w-1/2 pl-[67px] pb-[155px] pt-[128px] pr-[199px] flex flex-col gap-[40px]">
-          <div className="text-[112px] font-bold leading-28">PAYDAY SALE NOW</div>
+          <div className="text-[112px] font-bold leading-28">
+            PAYDAY SALE NOW
+          </div>
           <div className="text-4xl">
             Spend minimal $100 get 30% off voucher code for your next purchase
           </div>
-          <div  className="text-4xl">
+          <div className="text-4xl">
             <div className="font-semibold">1 June - 10 June 2021</div>
             <div>*Terms & Conditions apply</div>
           </div>
-          <CustomButton title={"Shop now"} className='!w-[160px]'/>
+          <CustomButton title={"Shop now"} className="!w-[160px]" />
         </div>
       )}
       <Image

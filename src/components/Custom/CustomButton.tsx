@@ -1,8 +1,8 @@
 import { Button } from "antd";
 
 interface IProps {
-  title: String;
-  className?: String;
+  title: string;
+  className?: string;
   handleClick?: () => void;
 }
 

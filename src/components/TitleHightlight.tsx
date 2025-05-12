@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 interface IProps {
-    title: String
+  title: string;
 }
 
-const TitleHightLight = ({title}:IProps) => {
+const TitleHightLight = ({ title }: IProps) => {
   return (
     <div className="title relative w-fit text-5xl font-bold h-[50px] mb-[118px]">
       <span className="z-10 relative">{title}</span>

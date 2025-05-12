@@ -13,11 +13,18 @@ const Footer = () => {
         </span>
         <div className="socials flex gap-3.5">
           {socials.map((el) => (
-            <Link href='#' className="w-[52px] cursor-pointer h-[52px] rounded-[15px] bg-[#EBD96B] flex items-center justify-center">
+            <Link
+              key={el}
+              href="#"
+              className="w-[52px] cursor-pointer h-[52px] rounded-[15px] bg-[#EBD96B] flex items-center justify-center"
+            >
               <Image src={el} alt="" width={20} height={20} />
             </Link>
           ))}
-          <Link href='#' className="w-[52px] cursor-pointer h-[52px] rounded-[15px] bg-[#EBD96B] flex items-center justify-center">
+          <Link
+            href="#"
+            className="w-[52px] cursor-pointer h-[52px] rounded-[15px] bg-[#EBD96B] flex items-center justify-center"
+          >
             <span className="text-2xl font-bold text-black">In</span>
           </Link>
         </div>
